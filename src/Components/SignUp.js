@@ -34,14 +34,15 @@ export default function SignUp(props) {
           <input type="submit" />
           <div>
               <input type="checkbox" onClick={checkboxHandler} /> 
-              <p>By signing up you are agree to our Term of Use and Privacy Policy.</p>
+              <p className="terms">By signing up you are agree to our Term of Use and Privacy Policy.</p>
             </div>
             <input type="submit" disabled = {!flag} />
           </form>
-          <button onClick= {handleClick}>Don’t have an account? <span>Signup Here</span></button>
+          <button onClick= {handleClick}>Don’t have an account? <span id="colorchange">Signup Here</span></button>
           <div>
-        <img src = {signUpCover} alt="no img" />
-      </div>
+            {/* <img src={sticker} /> */}
+            <img src = {signUpCover} alt="no img" />
+          </div>
     </div>
   )
 }

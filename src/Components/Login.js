@@ -28,9 +28,9 @@ export default function Login(props) {
         <p id="heading">We are very happy to see you back!</p>
           <form onSubmit={handleSubmit}>
             <label>Email : </label>
-            <input type="email" value={Email} onChange={(event) => setEmail(event.target.value)} className="inputbox" />
+            <input type="email" value={Email} onChange={(event) => setEmail(event.target.value)} placeholder="Enter your Email" className="inputbox" />
             <label>Password : </label>
-            <input type="password" value={Password} onChange={(event) => setPassword(event.target.value)} className="inputbox" />
+            <input type="password" value={Password} onChange={(event) => setPassword(event.target.value)} placeholder="Enter your Password" className="inputbox" />
             <div className="checkbox-btn">
               <input type="checkbox" onClick={checkboxHandler} className="check" /> 
               <p className="terms">By signing up you are agree to our Term of Use and Privacy Policy.</p>

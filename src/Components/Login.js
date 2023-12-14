@@ -1,17 +1,29 @@
 import { useState } from "react";
 import React from 'react';
 import loginCover from '../assets/logCover.png'
-import { Link } from "react-router-dom";
+import { Link , useNavigate } from "react-router-dom";
 
 export default function Login() {
 
+  const Navigate = useNavigate()
   const [Email , setEmail] = useState("");
   const [Password , setPassword] = useState("");
   const [flag, setFlag] = useState(false);
 
+  function validate() {
+    return true;
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
+    
     console.log(Email);
+    if(validate()) {
+      Navigate('/home');
+    }
+    else {
+      //handle err
+    }
   }
 
   const checkboxHandler = () => {

@@ -1,11 +1,9 @@
 import { useState } from "react";
 import React from 'react';
 import loginCover from '../assets/logCover.png'
+import { Link } from "react-router-dom";
 
-export default function Login(props) {
-  const handleClick = () => {
-    props.switchPage('SignUp');
-  };
+export default function Login() {
 
   const [Email , setEmail] = useState("");
   const [Password , setPassword] = useState("");
@@ -37,7 +35,12 @@ export default function Login(props) {
             </div>
             <input type="submit" disabled = {!flag} className="submit-btn" />
           </form>
-          <button onClick= {handleClick}>Don’t have an account? <span>Signup Here</span></button>
+          <button>
+            <Link to='/signup'>
+              Don’t have an account? <span>Signup Here</span>
+            </Link>
+            
+            </button>
       </div>
       <div className="imgContainer">
         <img src = {loginCover} alt="no img" className="cover" />

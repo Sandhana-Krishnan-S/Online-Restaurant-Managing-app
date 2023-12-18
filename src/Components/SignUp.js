@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from 'react'
 import signUpCover from '../assets/signUpCover.png'
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink , useNavigate } from "react-router-dom";
 
 export default function SignUp() {
 
@@ -48,10 +48,10 @@ export default function SignUp() {
             </div>
             <input type="submit" disabled = {!flag} className="submit-btn" />
           </form>
-          <button>
-            <Link to= '/login'>
+          <button id="buttonOnLogin">
+            <NavLink  to= '/login'>
             Don’t have an account? <span id="colorchange">Signup Here</span>
-            </Link>
+            </NavLink >
             
             </button>
       </div>

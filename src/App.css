@@ -1,9 +1,9 @@
 @import url('https://rsms.me/inter/inter.css');
 
 body {
-  overflow: hidden;
   background-color: #F8F1E7;
   color: #3D2B1F;
+  /* overflow: hidden; */
 }
 
 .App {
@@ -11,6 +11,72 @@ body {
   padding: 0px;
 }
 
-Link {
+NavLink  {
+  text-decoration: 'none';
+  color: #3D2B1F;
+}
+
+.footLink {
+  color: #3D2B1F;
   text-decoration: none;
+  margin: 1em;
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.Navigations {
+  margin: 1em;
+}
+
+.NavLinks {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5vh;
+  justify-content: center;
+}
+
+.LogoLink {
+  margin: 1em;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.footerDiv {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.Navigations {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+/* NavBar */
+
+.NavBar-Container {
+  height: 10vh;
+  background-color: #F8F1E7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo {
+  margin-left: 25px;
+}
+
+.NavigationsBar {
+  display: flex;
+  flex-direction: row;
+  margin: 2em;
 }

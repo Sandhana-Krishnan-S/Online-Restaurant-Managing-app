@@ -1,0 +1,25 @@
+.m-card {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+    background-color: #1E3706;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.cover-img {
+    height: 80%;
+    width: 80%;
+}
+
+.right {
+    float: right;
+    margin-right: 15%;
+}
+
+.descriptionMain {
+    padding: 15px;
+    margin: 5px;
+}

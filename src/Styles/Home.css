@@ -1,0 +1,14 @@
+.imgContainer {
+    width: 80%; 
+    height: 80%;
+  }
+  
+  .cover {
+    object-fit: cover;
+    object-position: center; 
+    overflow: -moz-hidden-unscrollable;
+    width: 1000px;
+    height: 800px;
+    flex-shrink: 0;
+    float: right;
+  }

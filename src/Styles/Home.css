@@ -46,3 +46,10 @@
     justify-content: center;
     margin: 10px 0px 20px 0px;
   }
+
+  .cardAlign {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 100px;
+  }

@@ -15,6 +15,7 @@ New Day
 
 
 to do :
+
     1 complete home page fully till my satisfaction
     2 do some validation code for login and signup
     3 give some functionality to home and do order and reservation page
@@ -24,6 +25,15 @@ same as last time its 1 : 06 am some reason same time
 
 i wont get enough sleep its winter too ... 😴😴
 
+
+On Class 
+
+    1 do hover for small card 
+    2 complete home page today
+    3 use context aip on web
+
+
+God I hate myself
 
 
 Note : 

@@ -16,9 +16,9 @@ New Day
 
 to do :
 
-    1 complete home page fully till my satisfaction
-    2 do some validation code for login and signup
-    3 give some functionality to home and do order and reservation page
+    1 complete home page fully till my satisfaction - Done
+    2 do some validation code for login and signup -
+    3 give some functionality to home and do order and reservation page -
     4 about us contact and blog can be done later ...
 
 same as last time its 1 : 06 am some reason same time 
@@ -28,9 +28,8 @@ i wont get enough sleep its winter too ... 😴😴
 
 On Class 
 
-    1 do hover for small card 
-    2 complete home page today
-    3 use context aip on web
+    1 complete home page today - Done
+    2 use context aip on web - Done
 
 
 God I hate myself

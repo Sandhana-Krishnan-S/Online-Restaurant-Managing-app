@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useState , useContext } from "react";
 import React from 'react';
 import loginCover from '../assets/logCover.png'
 import { NavLink  , useNavigate } from "react-router-dom";
+import { Context } from './UserContext';
 
 export default function Login() {
 
+  const { signinHandler } = useContext(Context);
+
   const Navigate = useNavigate()
-  const [Email , setEmail] = useState("");
+  const [Username , setUsername] = useState('');
   const [Password , setPassword] = useState("");
   const [flag, setFlag] = useState(false);
 
@@ -17,9 +20,10 @@ export default function Login() {
   const handleSubmit = (event) => {
     event.preventDefault();
     
-    console.log(Email);
+    console.log(Username);
     if(validate()) {
-      Navigate('/home');
+      signinHandler(Username);
+      Navigate('/');
     }
     else {
       //handle err
@@ -38,8 +42,8 @@ export default function Login() {
           <h2>Welcome Back To DineOn</h2>
           <p id="heading">We are very happy to see you back!</p>
             <form onSubmit={handleSubmit}>
-              <label>Email : </label>
-              <input type="email" value={Email} onChange={(event) => setEmail(event.target.value)} placeholder="Enter your Email" className="inputbox" />
+              <label>Username : </label>
+              <input type="text" value={Username} onChange={(event) => setUsername(event.target.value)} required placeholder="Enter your Username" className="inputbox" />
               <label>Password : </label>
               <input type="password" value={Password} onChange={(event) => setPassword(event.target.value)} placeholder="Enter your Password" className="inputbox" />
               <div className="checkbox-btn">

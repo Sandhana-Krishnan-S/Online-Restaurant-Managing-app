@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import HomeCover from '../assets/HomeCover.png';
 import Footer from './UniversalComponent/Footer';
 import NavBar from './UniversalComponent/NavBar';
@@ -7,6 +7,7 @@ import SubCard from './HomeCard/SubCard';
 import SubCard1 from '../assets/SubCard1.png';
 import SubCard2 from '../assets/SubCard2.png';
 import { NavLink } from 'react-router-dom';
+import { Context } from './UserContext';
 
 export default function Home() {
   const Card1 =  {
@@ -23,6 +24,11 @@ export default function Home() {
     title : 'Grilled beef',
     description : 'Enter the realm of grilled beef, where the sizzle is the sound of flavor fireworks. Picture succulent beef, kissed by the flames, creating a symphony of smoky goodness. The grill marks are like edible tattoos'
   }
+
+  //context 
+
+  const {UserName} = useContext(Context);
+
   return (
     <div className='homeCover'>
       <NavBar />
@@ -30,7 +36,7 @@ export default function Home() {
           <div className='imgContainer'>
             <img src = {HomeCover} alt=' Img Is Not Available' className='homepic' />
           </div>
-          <p>Hey {user ? user : 'Guest'}, welcome to Dine-On! Your gateway to the best and verified local restaurants. Discover culinary delights and create unforgettable dining experiences with us. 🍔🎉</p>
+          <p>Hey <span style={{fontWeight : '800'}}>{UserName ? UserName : 'Guest'}</span>, welcome to Dine-On! Your gateway to the best and verified local restaurants. Discover culinary delights and create unforgettable dining experiences with us. 🍔🎉</p>
         </div>
         <div className='explore-btn'>
           <button className='btn-act'>Order</button>

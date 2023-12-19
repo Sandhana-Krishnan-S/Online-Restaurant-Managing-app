@@ -80,3 +80,16 @@ NavLink  {
   flex-direction: row;
   margin: 2em;
 }
+
+.btn {
+  height: 4vh;
+  width: 75px;
+  background-color: #3D2B1F;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.whitePara {
+  color: azure;
+  margin: 0px;
+}

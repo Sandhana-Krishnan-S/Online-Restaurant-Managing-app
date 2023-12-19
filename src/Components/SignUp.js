@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState , useContext } from "react";
 import React from 'react'
 import signUpCover from '../assets/signUpCover.png'
 import { NavLink , useNavigate } from "react-router-dom";
+import { Context } from "./UserContext";
 
 export default function SignUp() {
 
@@ -10,6 +11,8 @@ export default function SignUp() {
   const [Email , setEmail] = useState('');
   const [Password , setPassword] = useState('');
   const [flag, setFlag] = useState(false);
+  const { signinHandler } = useContext(Context);
+
 
   function validate() {
     return true;
@@ -19,7 +22,8 @@ export default function SignUp() {
     event.preventDefault();
     console.log(Email);
     if(validate()) {
-      Navigate('/home');
+      signinHandler(Username);
+      Navigate('/');
     }
     else {
       //handle err
@@ -37,7 +41,7 @@ export default function SignUp() {
       <p id="heading">Indulge in delightful, create an account for Food Heaven!</p>
         <form onSubmit={handleSubmit} >
           <label>Username : </label>
-          <input type="text" value={Username} onChange={(event) => setUsername(event.target.value)} placeholder="Enter your Username" className="inputbox" />
+          <input type="text" value={Username} required onChange={(event) => setUsername(event.target.value)} placeholder="Enter your Username" className="inputbox" />
           <label>Email : </label>
           <input type="email" value={Email} onChange={(event) => setEmail(event.target.value)} placeholder="Enter your Email" className="inputbox" />
           <label>Password : </label>

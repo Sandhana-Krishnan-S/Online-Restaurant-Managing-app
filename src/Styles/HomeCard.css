@@ -21,23 +21,24 @@
 
 .descriptionMain {
     padding: 15px;
-    margin: 5px;
+    margin: 5px        ;
 }
 
 
 /* Sub Card */
 
 .SubCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding: 25px;
     text-align: center;
-    align-items: center;
     background-color: #1E3706;
     color: azure;
-    width: 75vh;
     height: 550px;
     border-radius: 10px;
+    width: auto;
+    margin: 10px;
 }
 
 .gold {
@@ -46,5 +47,18 @@
 
 .cardimg {
     width: 300px;
-    height: 300px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 24px;
+    margin: auto;
+}
+
+.description {
+    padding: 25px;
+    font-size: 16px;
+    float: inherit;
 }

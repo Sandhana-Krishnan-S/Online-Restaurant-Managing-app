@@ -6,6 +6,7 @@ import MainCard from './HomeCard/MainCard';
 import SubCard from './HomeCard/SubCard';
 import SubCard1 from '../assets/SubCard1.png';
 import SubCard2 from '../assets/SubCard2.png';
+import { NavLink } from 'react-router-dom';
 
 export default function Home() {
   const Card1 =  {
@@ -29,7 +30,7 @@ export default function Home() {
           <div className='imgContainer'>
             <img src = {HomeCover} alt=' Img Is Not Available' className='homepic' />
           </div>
-          <p>Get groovy with Dine On! Menu mischief, spot snagging, and flavor explosions await. Let the tasty trip begin! 🍔🎉</p>
+          <p>Hey {user ? user : 'Guest'}, welcome to Dine-On! Your gateway to the best and verified local restaurants. Discover culinary delights and create unforgettable dining experiences with us. 🍔🎉</p>
         </div>
         <div className='explore-btn'>
           <button className='btn-act'>Order</button>
@@ -45,6 +46,14 @@ export default function Home() {
               <SubCard data={Card2} />
             </div>
           </div>
+        </div>
+        <div className='AboutInHome'>
+          <h2>Learn More About Us</h2> 
+          <p>
+Welcome to Dine-On, your go-to destination for discovering the finest and verified restaurants in and around your local area. At Dine-On, we understand that finding the perfect dining experience is not just about satisfying your hunger—it's about creating memorable moments. That's why we've curated a diverse selection of the best restaurants that have been thoroughly vetted to ensure top-notch quality and service.</p>
+          <button className='HomeAbt-btn'>
+            <NavLink><p className='btn-link'>About Us</p></NavLink>
+          </button>
         </div>
         <Footer />
     </div>

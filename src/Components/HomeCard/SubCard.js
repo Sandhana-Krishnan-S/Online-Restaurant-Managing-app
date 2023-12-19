@@ -8,8 +8,8 @@ export default function SubCard({data}) {
       <div>
         <img src={data.img} alt='' className='cardimg'/>
       </div>
-      <h4>{data.title}</h4>
-      <p>{data.description}</p>
+      <h4 className='title'>{data.title}</h4>
+      <p className='description'>{data.description}</p>
     </div>
   )
 }

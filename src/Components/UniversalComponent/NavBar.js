@@ -5,7 +5,6 @@ import { Context } from '../UserContext';
 export default function NavBar() {
     const { UserName, isLogedin , handleLogOut } = useContext(Context);
     const Navigate = useNavigate()
-
     const LogOut = () => {
         handleLogOut();
         Navigate('/login');
@@ -23,13 +22,13 @@ export default function NavBar() {
             <NavLink className='footLink'>Home</NavLink >
         </li>
         <li type = 'none'>
-            <NavLink className='footLink'>Shop</NavLink >
+            <NavLink className='footLink' to= '/shop'>Shop</NavLink >
         </li>
         <li type = 'none'>
-            <NavLink className='footLink'>Blog</NavLink >
+            <NavLink to='/blog' className='footLink'>Blog</NavLink >
         </li>
         <li type = 'none'>
-            <NavLink className='footLink'>about</NavLink >
+            <NavLink to='/about' className='footLink'>about</NavLink >
         </li>
         <li type = 'none'>
             <NavLink className='footLink'>Contact</NavLink >

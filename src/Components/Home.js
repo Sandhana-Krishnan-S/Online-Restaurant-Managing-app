@@ -36,7 +36,7 @@ export default function Home() {
           <div className='imgContainer'>
             <img src = {HomeCover} alt=' Img Is Not Available' className='homepic' />
           </div>
-          <p>Hey <span style={{fontWeight : '800'}}>{UserName ? UserName : '`       `'}</span>, welcome to Dine-On! Your gateway to the best and verified local restaurants. Discover culinary delights and create unforgettable dining experiences with us. 🍔🎉</p>
+          <p>Hey <span style={{fontWeight : '800'}}>{UserName ? UserName : 'Guest'}</span>, welcome to Dine-On! Your gateway to the best and verified local restaurants. Discover culinary delights and create unforgettable dining experiences with us. 🍔🎉</p>
         </div>
         <div className='explore-btn'>
           <button className='btn-act'>Order</button>

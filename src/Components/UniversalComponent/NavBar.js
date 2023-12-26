@@ -19,7 +19,7 @@ export default function NavBar() {
         </div>
         <div className='NavigationsBar'>
         <li type = 'none'>
-            <NavLink className='footLink'>Home</NavLink >
+            <NavLink to='/' className='footLink'>Home</NavLink >
         </li>
         <li type = 'none'>
             <NavLink className='footLink' to= '/shop'>Shop</NavLink >

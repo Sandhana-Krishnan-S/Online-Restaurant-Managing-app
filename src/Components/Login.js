@@ -3,6 +3,7 @@ import React from 'react';
 import loginCover from '../assets/logCover.png'
 import { NavLink  , useNavigate } from "react-router-dom";
 import { Context } from './UserContext';
+import '../Styles/Login.css';
 
 export default function Login() {
 

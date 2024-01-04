@@ -3,6 +3,7 @@ import React from 'react'
 import signUpCover from '../assets/signUpCover.png'
 import { NavLink , useNavigate } from "react-router-dom";
 import { Context } from "./UserContext";
+import '../Styles/Login.css';
 
 export default function SignUp() {
 

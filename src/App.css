@@ -69,6 +69,7 @@ NavLink  {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
@@ -81,15 +82,20 @@ NavLink  {
   margin: 2em;
 }
 
-.btn {
+.logbtn {
   height: 4vh;
   width: 75px;
   background-color: #3D2B1F;
   border-radius: 10px;
   text-align: center;
+  /* margin-bottom: 5px; */
 }
 
 .whitePara {
   color: azure;
   margin: 0px;
 }
+/* 
+.LoginSignup {
+  padding-bottom: 10px;
+} */

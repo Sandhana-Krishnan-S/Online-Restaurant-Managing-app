@@ -8,6 +8,8 @@ import SubCard1 from '../assets/SubCard1.png';
 import SubCard2 from '../assets/SubCard2.png';
 import { NavLink } from 'react-router-dom';
 import { Context } from './UserContext';
+import '../Styles/HomeCard.css';
+import '../Styles/Home.css';
 
 export default function Home() {
   const Card1 =  {

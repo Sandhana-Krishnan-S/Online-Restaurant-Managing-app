@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { Context } from '../UserContext';
 
 export default function NavBar() {
-    const { UserName, isLogedin , handleLogOut } = useContext(Context);
+    const { isLogedin , handleLogOut } = useContext(Context);
     const Navigate = useNavigate()
     const LogOut = () => {
         handleLogOut();
@@ -34,17 +34,16 @@ export default function NavBar() {
             <NavLink className='footLink'>Contact</NavLink >
         </li>
         <li type = 'none'>
-            <div>
+            <div className='LoginSignup'>
                 { isLogedin ? (
-                        <h3 onClick={LogOut} style={{
-                            margin : '0px' ,
-                            cursor : 'pointer'
-                        }}>{ UserName }</h3>
+                        <button className='logbtn' onClick={LogOut}>
+                        <NavLink to='/login'>
+                            <p className='whitePara'>Logout</p>
+                        </NavLink>
+                    </button>
                 ) : (
-                       <div style={{
-                        textAlign : 'center',
-                       }}>
-                         <button className='btn'>
+                       <div className='LoginSignup'>
+                         <button className='logbtn'>
                             <NavLink to='/login'>
                                 <p className='whitePara'>Login</p>
                             </NavLink>

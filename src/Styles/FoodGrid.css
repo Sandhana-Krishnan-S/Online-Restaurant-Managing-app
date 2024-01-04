@@ -1,0 +1,31 @@
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin: 24px;
+  }
+  
+  .product-card {
+    flex: 0 0 calc(33.33% - 10px);
+    background-color: aqua;
+  }
+
+  .cardFlex {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardFlex h4 {
+    text-align: center;
+  }
+
+  .img-order {
+    height: 240px;
+    width: 240px;
+    padding-right: 16px;
+  }
+  
